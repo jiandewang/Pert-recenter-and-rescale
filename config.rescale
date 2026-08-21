@@ -35,17 +35,18 @@ FIRST_MEM_DIR=$(printf "${CYCLE_ORIGIN_DIR}/mem${MEM_FORMAT}/analysis/ocean" "${
 export PERT_FILENAME=$(basename $(ls ${FIRST_MEM_DIR}/*.mom6_perturbation.nc 2>/dev/null | head -n 1))
 
 # Operational Working Directory (Scratch Space: work/YYYYMMDD/HH)
-export WORK_DIR="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center/work/${YYYYMMDD}/${HH}"
+export WORK_DIR="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center-git/work/${YYYYMMDD}/${HH}"
 
 # Path for saving computed ensemble mean file inside working directory
 export ENSEMBLE_MEAN_FILE="${WORK_DIR}/ensemble_mean.nc"
 
 # Fixed Scaling Directory & Profile CSV
-export FIXED_DIR="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center/Fixed"
+#export FIXED_DIR="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center/Fixed"
+export FIXED_DIR="./Fixed"
 export SCALE_CSV="${FIXED_DIR}/scale.csv"
 
 # Final Output Directory Root (mirrors ICs/CPC_land-rescaled/C192mx025)
-export OCEAN_PERT_RESCALED="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center/ICs/CPC_land-rescaled/C192mx025"
+export OCEAN_PERT_RESCALED="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center-git/ICs/CPC_land-rescaled/C192mx025"
 
 # ------------------------------------------------------------------------------
 # 4. System & Operational Constraints
