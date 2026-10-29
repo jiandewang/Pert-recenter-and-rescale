@@ -43,11 +43,10 @@ export ENSEMBLE_MEAN_FILE="${WORK_DIR}/ensemble_mean.nc"
 # Fixed Scaling Directory & Profile CSV
 #export FIXED_DIR="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center/Fixed"
 export FIXED_DIR="./Fixed"
-export SCALE_CSV="${FIXED_DIR}/scale.csv"
+export SCALE_CSV="${FIXED_DIR}/scale.csv-13case-avg"
 
 # Final Output Directory Root (mirrors ICs/CPC_land-rescaled/C192mx025)
 export OCEAN_PERT_RESCALED="/scratch3/NCEPDEV/climate/Jiande.Wang/SFS-work/re-center-git/ICs/CPC_land-rescaled/C192mx025"
-
 # ------------------------------------------------------------------------------
 # 4. System & Operational Constraints
 # ------------------------------------------------------------------------------
